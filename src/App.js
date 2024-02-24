@@ -2,7 +2,9 @@ import React,{useState} from "react";
 import DataFromApi from "./components/data";
 import RenderData from "./components/RenderData";
 const App=()=>{
-  const [data,setData]=useState("")
+  const [data,setData]=useState([ 
+    
+  ])
   return(
     <div>
       <DataFromApi setData={setData}/>
