@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import React,{useState} from "react";
+import DataFromApi from "./components/data";
+import RenderData from "./components/RenderData";
+const App=()=>{
+  const [data,setData]=useState("")
+  return(
+    <div>
+      <DataFromApi setData={setData}/>
+      <RenderData data={data}/>
     </div>
-  );
+  )
 }
-
 export default App;
