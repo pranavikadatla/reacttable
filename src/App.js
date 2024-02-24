@@ -6,7 +6,7 @@ const App=()=>{
   return(
     <div>
       <DataFromApi setData={setData}/>
-      <RenderData data={data}/>
+      <RenderData data={data}/> 
     </div>
   )
 }

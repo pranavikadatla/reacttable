@@ -5,11 +5,14 @@
   color:white;
 }
 .table{
-  justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 100vh;
   border-collapse: collapse;
   background-color: black;
   color:white;
 }
 .row{
-  margin:2px;
+  padding:4px 10px;
 }
