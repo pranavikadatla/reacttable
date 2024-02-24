@@ -6,7 +6,7 @@ const RenderData=({data})=>{
         <div class="table">
         <table border="1">
             <tbody>
-           {data && data.length >0 }&& {data.map (item=>(
+           {data && data.length >0 && data.map (item=>(
                  <tr  key={item.id}>
                      <td className="row"> {<img height="40" src={item.image}/>}</td>
                      <td className="row"> {item.name}</td>
